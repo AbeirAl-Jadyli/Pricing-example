@@ -1,0 +1,170 @@
+:root {
+    --main-color: #132b39;
+    --font-color: white;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.top-header {
+    border-bottom: 2px solid rgb(66, 64, 64);
+}
+
+.container-header {
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    background-color: var(--main-color);
+    color: var(--font-color);
+
+}
+
+.logo-header {
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo-header a {
+    color: var(--font-color);
+}
+
+.list-header {
+    width: 50%;
+}
+
+.list-header-par {
+
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+}
+
+
+
+/* section 1 */
+.top-section {
+    margin: 20px;
+
+}
+
+.title-section {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 2px solid var(--main-color);
+}
+
+/* section 2 */
+
+.container-card {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    border: 2px solid var(--main-color);
+    /* min-width: 250px; */
+    margin-right: 20px;
+}
+
+.card h3 {
+    padding: 15px 45px 15px 45px;
+    background-color: var(--main-color);
+    color: var(--font-color);
+    text-align: center;
+}
+
+.content-card1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.btn-card {
+    padding-top: 30px;
+}
+
+.btn-card button {
+    font-size: 1.5rem;
+    min-width: 200px;
+    border-bottom: 2px solid var(--main-color);
+    border-radius: 20px;
+}
+
+.btn-card button:hover {
+    background-color: var(--main-color);
+    color: var(--font-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px) {
+    .container-header {
+        display: block;
+        background-color: var(--main-color);
+        color: var(--font-color);
+    }
+
+    .logo-header {
+        /* d7 logo*/
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .list-header {
+        /* d7 social media*/
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .list-header-par {
+        justify-content: start;
+    }
+
+
+    /* card */
+    .container-card {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    
+    }
+
+}
